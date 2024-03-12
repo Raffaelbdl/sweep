@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sweep"
+requires-python = ">=3.10"
+description = "A minimalist sweep library."
+authors = [
+    {name = "Raffael Bolla Di Lorenzo", email = "raffaelbdl@gmail.com"}
+]
+dependencies = []
+dynamic = ["version", "readme"]
+
+[project.urls]
+homepage = "https://github.com/Raffaelbdl/sweep"
+
+[tool.setuptools.dynamic]
+readme = {file = ["README.md"], content-type = "text/markdown"}
+version = {attr = "sweep.__version__"}
+
+[tool.setuptools.packages.find]
+include = ["sweep*"]
