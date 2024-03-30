@@ -9,7 +9,7 @@ description = "A minimalist sweep library."
 authors = [
     {name = "Raffael Bolla Di Lorenzo", email = "raffaelbdl@gmail.com"}
 ]
-dependencies = ["git+https://github.com/Raffaelbdl/shaberax.git"]
+dependencies = ["shaberax@git+https://github.com/Raffaelbdl/shaberax.git"]
 dynamic = ["version", "readme"]
 
 [project.urls]
